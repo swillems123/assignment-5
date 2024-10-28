@@ -1,0 +1,49 @@
+Question 1:
+User: Write a function that returns the longest running Animes. No pandas no libraries no imports
+
+Answer:
+
+Question 2:
+User: Dates are in fifth column and are formatted dates are formatted like this Apr 6, 2011 to Sep 14, 2011
+
+Answer: To handle the dates formatted as "Apr 6, 2011 to Sep 14, 2011" and find the longest running animes, you can use the provided code snippet and complete it with the necessary functions to parse the dates and calculate the duration.
+
+Here's the complete code:
+
+Question 3:
+User: What is datetime
+
+Answer: In the provided code, datetime is a module from Python's standard library that supplies classes for manipulating dates and times. The datetime module includes several classes, but the most commonly used ones are datetime, date, time, and timedelta.
+
+In the context of the provided code:
+
+datetime.strptime(date_str, '%b %d, %Y') is used to parse a date string formatted as 'Mon DD, YYYY' into a datetime object. The strptime method is used to create a datetime object from a string representing a date and time.
+Here is a brief explanation of the datetime module and its usage in the code:
+
+Importing the datetime module:
+
+Parsing a date string:
+
+date_str is the string representing the date (e.g., "Apr 6, 2011").
+'%b %d, %Y' is the format string that specifies the format of date_str.
+strptime returns a datetime object representing the parsed date.
+Returning the year, month, and day from the datetime object:
+
+The datetime module is essential for working with dates and times in Python, providing a wide range of functionalities for parsing, formatting, and manipulating date and time values.
+
+Question 4:
+User: It should return the longest running animes
+
+Answer: To ensure the function returns the longest running animes, we need to modify the code to collect all animes and then return the one with the longest duration. Here's the complete function with the necessary adjustments:
+
+Question 5:
+User: Relating only to this helper function and converting the anime lengths to longest to listing them all
+
+Answer: To convert the anime lengths to the longest and list them all, you can use the longest_running_animes function. This function reads a CSV file, parses the date ranges, calculates the duration of each anime, and sorts them by duration in descending order.
+
+Here is the relevant code for the longest_running_animes function:
+
+You can use this function to get a list of all animes sorted by their duration in descending order. Just call the function with the path to your CSV file:
+
+This will print the names of all animes sorted by their duration from longest to shortest.
+
